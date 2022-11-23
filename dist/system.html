@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <!-- ライブラリ -->
+    <link rel="stylesheet" href="https://www.online-proof.net/aproove/css/aproove_main.css">
+    <link rel="stylesheet" href="https://www.online-proof.net/aproove/css/aproove.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- 開発用css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- 開発用css -->
+
+    <!-- 開発用js -->
+    <script src="./interaction.js" defer></script>
+    <script src="./cirto22_acc.js"></script>
+
+    <!-- 開発用js -->
+    <!-- 本番用css -->
+    <!-- <link rel="stylesheet" href="https://www.cierto-ccc.com/test/cierto/style2208.css"> -->
+    <!-- 本番用css -->
+    <!-- 本番用js -->
+    <!-- <script src="https://www.cierto-ccc.com/test/cierto/js2208.js" defer></script> -->
+    <!-- 本番用js -->
+    <script>
+      $(function(){
+          $(".accordionbox dt").on("click", function() {
+              $(this).next().slideToggle();	
+              // activeが存在する場合
+              if ($(this).children(".accordion_icon").hasClass('active')) {			
+                  // activeを削除
+                  $(this).children(".accordion_icon").removeClass('active');				
+              }
+              else {
+                  // activeを追加
+                  $(this).children(".accordion_icon").addClass('active');			
+              }			
+          });
+      });
+      </script>
+  </head>
+  <body>
+    <!-- common_header -->
+    <header class="header">
+      <nav class="gNav" id="gNav">
+        <div class="gNav_outer">
+          <p class="mod_imgUnit gNav_logo">
+            <a href="./index.html"
+              ><img
+                src="https://www.cierto-ccc.com/cierto/img/22-logo_vpj_white.png"
+                alt="vpj_logo"
+            /></a>
+          </p>
+          <ul class="gNav_list">
+            <li class="gNav_listItem">
+              <a href="https://www.vpj.co.jp/company/index.html">Company</a>
+            </li>
+            <li class="gNav_listItem">
+              <a href="https://www.vpj.co.jp/concept/index.html">Concept</a>
+            </li>
+            <li class="gNav_listItem">
+              <a href="https://www.vpj.co.jp/product/index.html">Product</a>
+            </li>
+            <li class="gNav_listItem">
+              <a href="https://www.vpj.co.jp/case/index.html">Case</a>
+            </li>
+            <li class="gNav_listItem">
+              <a href="https://www.vpj.co.jp/news/index.html">News</a>
+            </li>
+            <li class="gNav_listItem">
+              <a href="https://www.vpj.co.jp/contact/index.html">Contact</a>
+            </li>
+            <li class="gNav_listItem">
+              <a href="https://www.cierto-ccc.com/cierto/index_eng.html">EN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- gnav -->
+      <!-- lnav -->
+      <nav class="s-lNav" id="lNav">
+        <div class="lNav_outer">
+          <h1 class="lNav_logo">
+            <p class="mod_imgUnit">
+              <a href="./index.html"
+                ><img src="./img/wm_logo-b.png" alt="wm_logo-b"
+              /></a>
+            </p>
+          </h1>
+          <ul class="lNav_list">
+            <li class="lNav_listItem" id="subnavBtn">
+              Function & Features
+              <nav class="subNav">
+                <ul class="subNav_list">
+                  <li class="subNav_listItem">
+                    <a href="./project.html">プロジェクト管理機能</a>
+                  </li>
+                  <li class="subNav_listItem">
+                    <a href="./schedule.html"
+                      >スケジュール管理機能</a
+                    >
+                  </li>
+                  <li class="subNav_listItem">
+                    <a href="./communication.html"
+                      >オンラインコミュニケーション機能</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="lNav_listItem">
+              <a href="./difference.html">コラム</a>
+            </li>
+            <li class="lNav_listItem">
+              <a href="./system.html">契約形態</a>
+            </li>
+            <li class="lNav_listItem">
+              <a href="https://www.vpj.co.jp/case/index.html">導入事例</a>
+            </li>
+            <li class="lNav_listItem lNav_dlBtn">
+              <a href="https://www.cierto-ccc.com/cierto/download.html"
+                >資料請求</a
+              >
+            </li>
+            <li class="lNav_listItem lNav_contactBtn">
+              <a href="https://www.online-proof.net/aproove/redirect.html"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- lnav -->
+    </header>
+    <!-- common_header -->
+    <!-- contents-start -->
+    <main id="system">
+      <section class="mod_pageHead pageSHead">
+        <div class="mod_pageHeadOuter">
+          <h2 class="mod_pageHeadTtl">ご検討、ご導入に向けて</h2>
+        </div>
+      </section>
+      <section class="pageS_pattern mod_pageSecOuter">
+        <div class="pageS_patternOuter">
+          <div class="pageS_patternLeft">
+            <h3 class="pageS_patternTtl mod_secTtl">プライベートクラウド</h3>
+            <p class="pageS_patternDesc mod_pageSontentsDesc">
+              「Microsoft Azure」環境を貴社専用で構築し、ご利用いただきます。（サービス利用料にAzure利用コストを含みます。）
+            </p>
+          </div>
+          <div class="pageS_patternLeft">
+            <h3 class="pageS_patternTtl mod_secTtl">マルチテナントクラウド</h3>
+            <p class="pageS_patternDesc mod_pageSontentsDesc">
+              「Microsoft Azure」環境でご利用いただきます。（サービス利用料にAzure利用コストを含みます。スモールスタートで運用を開始し、状況に合わせて運用開始後にスケールを調整することが可能です。
+            </p>
+          </div> 
+        
+        </div>
+      </section>
+
+      
+      <section class="pageS_consal mod_pageSecOuter">
+        <div class="pageS_consalOuter">
+          <div class="pageS_patternLeft">
+            <h3 class="mod_secTtl pageS_partternTtl">カスタマーケアサポート</h3>
+            <p class="pageS_patternDesc">
+              APROOVE WMでの新業務フロー運用を円滑に進めるため、プロジェクト管理／進行／ドキュメント作成を実施します。<br><br>プロジェクト内で発生した課題は管理表を作成、解決までの経緯や方針・決定内容を記載します。プロジェクト内の作業進捗状況／スケジュールはWBSにて管理します。
+            </p>
+          </div> 
+          <div class="pageS_patternRight">
+            <p class="pageS_partternTtl mod_secTtl">
+              導入コンサル（業務分析→設計）
+            </p>
+            <p class="mod_imgUnit">
+              <img src="./img/system-img01.png" alt="consal-fig" />
+            </p>
+          </div>
+         
+        </div>
+        
+      </section>
+
+      <section class="pageS_sec pageS_control">
+        <h3 class="pageS_controlTtl mod_secTtl">管理機能</h3>
+        <ul class="pageS_controlList">
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">ログ管理</h4>
+            <p class="pageS_controlDesc">
+              操作ログやアクセスログを管理し、CSVファイルで出力できます。
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">SingleSignOn（SSO）対応</h4>
+            <p class="pageS_controlDesc">
+              ユーザごとにアクセス領域や操作権限を柔軟に設定できます。
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">ユーザ権限管理</h4>
+            <p class="pageS_controlDesc">
+              ログイン直後の画面でユーザー向けお知らせ内容を表示できます。
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">2FA（二要素認証）対応</h4>
+            <p class="pageS_controlDesc">
+              招待メールのURLから再度PWを自動発行通知する二要素認証が行えます。
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">API連携</h4>
+            <p class="pageS_controlDesc">Aproove API と Webhook 機能を使用して様々なプラットフォームとの統合が可能です。より高度なDAM（CIERTO）との連携も実現可能です。
+              
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">電子署名「21 CFR Part11」対応</h4>
+            <p class="pageS_controlDesc">
+              電子署名「21 CFR Part11」に準拠した電子署名の要件をフローに組み込むことが可能です。
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">多言語対応</h4>
+            <p class="pageS_controlDesc">
+              UI表示及び通知において多言語に対応しており、日本語、英語、ドイツ語、フランス語、スペイン語他対応しています。
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">タイムシート機能</h4>
+            <p class="pageS_controlDesc">タイムシートは、ユーザーがタスクを完了した後に記録した時間を自動表示/手動入力することが可能です。レポートで書き出せます。
+              
+            </p>
+          </li>
+          <li class="pageS_controlLIstItem">
+            <h4 class="pageS_controlTtl">Adobe、Microsoft ライブラリとの親和性</h4>
+            <p class="pageS_controlDesc">
+              Aproove Work Managementは、OEM契約を通じて、元のAdob​​eおよびMicrosoftライブラリを使用して完全な正確性を保証する唯一のクラウドベースのオンライン校正および作業管理ツールです。
+            </p>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- 推奨環境　jquery -->
+      <section class="pageS_format mod_pageSecOuter" id="system_formart">
+        <div class="inner mt80">
+          <h3 class="pro_title">対応フォーマット</h3>
+          <div class="system">
+            <div id="accordion" class="accordionbox">
+              <dl class="accordionlist">
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>ドキュメントファイル</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  PDF (Adobe portable document format)<br />
+                  ※PDF-X、CMYK、RGB、Spot colorを含む<br />
+
+                  DOC, DOCX（Microsoft WORD 95, 2000, 2002, 2005, 2008, 2012,
+                  365）<br />
+                  XLS, XLSX （Microsoft EXCEL 95, 2000, 2002, 2005, 2008, 2012,
+                  365）<br />
+                  PPT, PPTX （Microsoft PowerPoint 95, 2000, 2002, 2005, 2008,
+                  2012, 365）<br /><br />
+
+                  EML, MSG（HTMLコンテンツを含むEmailも含む）<br /><br />
+
+                  ZIP（Multi-file HTML structure with CSS, IMAGE）<br />
+                  ※ Entry point
+                  の名前はindex.HTMLにする必要があります。（self-contained and
+                  external links supported if accessible from our servers.）<br /><br />
+
+                  DWG, DXF （ Auto-desk Auto-CAD）<br /><br />
+
+                  CSHTML, HTM （ HTML file format, a self-contained file with
+                  external links supported if accessible from our servers -
+                  Single file and composite with external local or foreign
+                  dependencies.）<br /><br />
+                </dd>
+                <dt class="clearfix">
+                  <div class="title" style="text-align: left">
+                    <p>画像ファイル</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  AAI - AAI Dune image<br />
+                  ART- PFS: 1st Publisher<br />
+                  ARW - Sony Digital Camera Alpha Raw Image Format<br />
+                  AVI - Microsoft Audio/Visual Interleaved<br />
+                  AVS - AVS X image<br />
+                  BMP, BMP2, BMP3 - Microsoft Windows bitmap<br />
+                  CALS - Continuous Acquisition and Life-cycle Support Type 1
+                  image<br />
+                  CGM - Computer Graphics Metafile<br />
+                  CIN - Kodak Cineon Image Format<br />
+                  CMYK - Raw cyan, magenta, yellow, and black samples<br />
+                  CMYKA - Raw cyan, magenta, yellow, black, and alpha samples<br />
+                  CR2 - Canon Digital Camera Raw Image Format<br />
+                  CRW - Canon Digital Camera Raw Image Format<br />
+                  CUR - Microsoft Cursor Icon<br />
+                  CUT - DR Halo<br />
+                  DCM - Digital Imaging and Communications in Medicine (DICOM)
+                  image<br />
+                  DCR - Kodak Digital Camera Raw Image File<br />
+                  DCX - ZSoft IBM PC multi-page Paintbrush image<br />
+                  DDS - Microsoft Direct Draw Surface<br />
+                  DIB - Microsoft Windows Device Independent Bitmap<br />
+                  DJVUDNG - Digital Negative<br />
+                  DOT - Graph Visualization<br />
+                  DPX - SMPTE Digital Moving Picture Exchange 2.0 (SMPTE
+                  268M-2003)<br />
+                  EMF - Microsoft Enhanced Metafile (32-bit)<br />
+                  EPDF - Encapsulated Portable Document Format<br />
+                  EPI - Adobe Encapsulated PostScript Interchange format<br />
+                  EPS - Adobe Encapsulated PostScript<br />
+                  EPS2 - Adobe Level II Encapsulated PostScript<br />
+                  EPS3 - Adobe Level III Encapsulated PostScript<br />
+                  EPSF - Adobe Encapsulated PostScript<br />
+                  EPSI - Adobe Encapsulated PostScript Interchange format<br />
+                  EPT - Adobe EPS Interchange format with TIFFpreview<br />
+                  EXR - High dynamic-range (HDR) file format developed by
+                  Industrial Light & Magic<br />
+                  FAX - Group 3 TIFFFIG - FIG graphics format<br />
+                  FITS - Flexible Image Transport System<br />
+                  FPX - FlashPix Format<br />
+                  GIF - CompuServe Graphics Interchange Format<br />
+                  GPLT - Gnuplot plot files<br />
+                  GRAY - Raw gray samples<br />
+                  HDR - Radiance RGBE image format<br />
+                  HPGL - HP-GL plotter language<br />
+                  HRZ - Slow Scane TeleVision<br />
+                  ICO - Microsoft icon<br />
+                  INFO - Format, and characteristics of the image<br />
+                  INLINE - Base64-encoded inline image<br />
+                  JBIG - Joint Bi-level Image experts Group file interchange
+                  format<br />
+                  JNG - Multiple-image Network Graphics<br />
+                  JP2 - JPEG-2000 JP2 File Format Syntax<br />
+                  JPT - JPEG-2000 Code Stream Syntax<br />
+                  J2C - JPEG-2000 Code Stream Syntax<br />
+                  J2K - JPEG-2000 Code Stream Syntax<br />
+                  JPEG - Joint Photographic Experts Group JFIF format<br />
+                  JXR - JPEG extended range<br />
+                  MAN - Unix reference manual pages<br />
+                  MAT - MATLAB image format<br />
+                  MIFF - Magick image file format<br />
+                  MONO - Bi-level bitmap in least-significant-byte first
+                  order<br />
+                  MNG - Multiple-image Network Graphics<br />
+                  M2V - Motion Picture Experts Group file interchange format
+                  (version 2)<br />
+                  MPEG - Motion Picture Experts Group file interchange format
+                  (version 1)<br />
+                  MPC - Magick Persistent Cache image file formatMPR - Magick
+                  Persistent Registry<br />
+                  MRW - Sony (Minolta) Raw Image File<br />
+                  MSL - Magick Scripting Language<br />
+                  MTV - MTV Raytracing image format<br />
+                  MVG - Magick Vector Graphics.<br />
+                  NEF - Nikon Digital SLR Camera Raw Image File<br />
+                  ORF - Olympus Digital Camera Raw Image File<br />
+                  OTB - On-the-air Bitmap<br />
+                  P7 - Xv's Visual Schnauzer thumbnail format<br />
+                  PALM - Palm pixmap<br />
+                  PAM - Common 2-dimensional bitmap format<br />
+                  PBM - Portable bitmap format (black and white)<br />
+                  PCD - Photo CDP<br />
+                  CDS - Photo CD<br />
+                  PCL - HP Page Control Language<br />
+                  PCX - ZSoft IBM PC Paintbrush file<br />
+                  PDB - Palm Database ImageViewer Format<br />
+                  PDF - Portable Document Format<br />
+                  PEF - Pentax Electronic File<br />
+                  PFA - Postscript Type 1 font (ASCII)<br />
+                  PFB - Postscript Type 1 font (binary)<br />
+                  PFM - Portable float map format<br />
+                  PGM - Portable graymap format (grayscale)<br />
+                  PICON - Personal Icon<br />
+                  PICT - Apple Macintosh QuickDraw/PICT file<br />
+                  PIX - Alias/Wavefront RLE image format<br />
+                  PNG - Portable Network Graphics<br />
+                  PNG8 - Portable Network Graphics<br />
+                  PNG00 - Portable Network Graphics<br />
+                  PNG24 - Portable Network Graphics<br />
+                  PNG32 - Portable Network Graphics<br />
+                  PNG48 - Portable Network Graphics<br />
+                  PNG64 - Portable Network Graphics<br />
+                  PNM - Portable anymap<br />
+                  PPM - Portable pixmap format (color)<br />
+                  PSB - Adobe Large Document Format<br />
+                  PSD - Adobe Photoshop bitmap file<br />
+                  PTIF - Pyramid encoded TIFF<br />
+                  PWP - Seattle File Works multi-image file<br />
+                  RAD - Radiance image file<br />
+                  RAF - Fuji CCD-RAW Graphic File<br />
+                  RGB - Raw red, green, and blue samples<br />
+                  RGBA - Raw red, green, blue, and alpha samples<br />
+                  RFG - LEGO Mindstorms EV3 Robot Graphics File<br />
+                  RLA - Alias/Wavefront image file<br />
+                  RLE - Utah Run length encoded image file<br />
+                  SCT - Scitex Continuous Tone Picture<br />
+                  SFW - Seattle File Works image<br />
+                  SGI - Irix RGB image<br />
+                  SHTML - Hypertext Markup Language client-side image map<br />
+                  SID, MrSID - Multiresolution seamless image<br />
+                  SUN - SUN Rasterfile<br />
+                  SVG - Scalable Vector Graphics<br />
+                  TGA - Truevision Targa image<br />
+                  TIFF - Tagged Image File Format<br />
+                  TIM - PSX TIM file<br />
+                  TTF - TrueType font file<br />
+                  TXT - Raw text file<br />
+                  UIL - X-Motif UIL table<br />
+                  UYVY - Interleaved YUV raw image<br />
+                  VICAR - VICAR raster file format<br />
+                  VIFF - Khoros Visualization Image File Format<br />
+                  WBMP - Wireless bitmap<br />
+                  WDP - JPEG extended range<br />
+                  WEBP - Weppy image format<br />
+                  WMF - Windows Metafile<br />
+                  WPG - Word Perfect Graphics File<br />
+                  XBM - X Windows system bitmap, black and white only<br />
+                  XCF - GIMP image<br />
+                  XPM - X Windows system pixmap<br />
+                  XWD - X Windows system window dump<br />
+                  X3F - Sigma Camera RAW Picture File<br />
+                </dd>
+                <dt class="clearfix">
+                  <div class="title" style="text-align: left">
+                    <p>動画/音声ファイル</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  4xm<br />
+                  8088flex TMV<br />
+                  ACT VoiceAdobe Filmstrip<br />
+                  Audio IFF (AIFF)<br />
+                  American Laser Games MM3GPP<br />
+                  AMRAmazing Studio Packed Animation File<br />
+                  Artworx Data Format<br />
+                  ADP<br />
+                  AFC<br />
+                  ASF<br />
+                  AST<br />
+                  AVI<br />
+                  AviSynth<br />
+                  AVRAVS<br />
+                  Beam Software SIFF<br />
+                  Bethesda Softworks VID<br />
+                  BRSTM<br />
+                  BWFCRI ADXDiscworld II<br />
+                  BMVInterplay<br />
+                  C93<br />
+                  DV video<br />
+                  DXA<br />
+                  Electronic Arts cdata<br />
+                  Electronic Arts Multimedia<br />
+                  Ensoniq Paris Audio File<br />
+                  Flash (SWF)<br />
+                  Flash 9 (AVM2)<br />
+                  FLI/FLC/FLX animationFlash Video (FLV)<br />
+                  FunCom ISSG.723.1G.729 BITG.729 raw<br />
+                  GIF Animation<br />
+                  GFX<br />
+                  MVIMOV/QuickTime/<br />
+                  MP4<br />
+                  MP2<br />
+                  MP3MPEG-1 SystemMPEG-PS (program stream)<br />
+                  MPEG-TS (transport stream)<br />
+                  MPEG-4<br />
+                  Mirillis FIC video<br />
+                  Material eXchange Format (MXF)<br />
+                  PlayStation Portable PMP<br />
+                  Portable Voice Format<br />
+                  Sony OpenMG (OMA)<br />
+                  Sony PlayStation STR<br />
+                  Sony Wave64 (W64)<br />
+                  ADTS (AAC)<br />
+                  raw AC-3<br />
+                  raw DTS<br />
+                  raw DTS-H<br />
+                  raw AC-3<br />
+                  raw FLAC<br />
+                  raw GSM<br />
+                  raw H.261<br />
+                  raw H.263<br />
+                  raw H.264<br />
+                  raw HEVC<br />
+                  raw Ingenient MJPEG<br />
+                  raw MJPEG<br />
+                  raw MLP<br />
+                  raw MPEG<br />
+                  raw MPEG-1<br />
+                  raw MPEG-2<br />
+                  raw MPEG-4<br />
+                  raw TAK<br />
+                  raw TrueHD<br />
+                  raw VC-1<br />
+                  raw PCM A-law<br />
+                  raw PCM mu-law<br />
+                  raw PCM signed 8 bit<br />
+                  raw PCM signed 16 bit big-endian<br />
+                  raw PCM signed 16 bit little-endian<br />
+                  raw PCM signed 24 bit big-endian<br />
+                  raw PCM signed 24 bit little-endian<br />
+                  raw PCM signed 32 bit big-endian<br />
+                  raw PCM signed 32 bit little-endian<br />
+                  raw PCM unsigned 8 bit<br />
+                  raw PCM unsigned 16 bit big-endian<br />
+                  raw PCM unsigned 16 bit little-endian<br />
+                  raw PCM unsigned 24 bit big-endian<br />
+                  raw PCM unsigned 24 bit little-endian<br />
+                  raw PCM unsigned 32 bit big-endian<br />
+                  raw PCM unsigned 32 bit little-endian<br />
+                  raw PCM floating-point 32 bit big-endian<br />
+                  raw PCM floating-point 32 bit little-endian<br />
+                  raw PCM floating-point 64 bit big-endian<br />
+                  raw PCM floating-point 64 bit little-endian<br />
+                </dd>
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>Webサイト</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  HTMLファイル<br />
+                  ウェブサイトURL <br />
+                  ※Webサイトの校正に関してはプレビュー生成の制限事項がございます。詳細に関しましては弊社にご連絡下さい。
+                </dd>
+
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>その他（バーコードなど）</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  バーコード<br />
+                  CODABAR,EAN13, EAN8, UPCA, UPCE, Interleaved2of5,
+                  Standard2of5, MSI, Code11, Codabar, EAN14(SCC14), SSCC18,
+                  ITF14, Matrix 2 of 5, PZN, Code128, Code39 Extended, Code39
+                  Standard, Code93 Extended, Code16K, Code93 Standard, IATA 2 of
+                  5, OPC, GS1Code128, ISBN, ISMN, ISSN, ITF6, VIN, Pharmacode,
+                  DatabarOmniDirectional, DatabarTruncated, DatabarLimited,
+                  DatabarExpanded, DatabarStackedOmniDirectional,
+                  DatabarExpandedStacked, DatabarStacked, PatchCode, Supplement
+                  (Decode only),<br /><br />
+
+                  2Dバーコード（次のタイプを含む）<br />
+                  PDF417, MacroPDF417, MicroPDF417, CompactPDF417 (Decode only),
+                  DataMatrix, Aztec, QR, MicroQR, DotCode, MaxiCode, Italian
+                  Post 25, GS1DataMatrix, Code16K<br /><br />
+
+                  Postal barcode（次のタイプを含む）<br />
+                  Postnet, Planet, USPS OneCode, Australia Post, Deutsche Post
+                  Identcode, Deutsche, Post Leticode, RM4SCC, SingaporePost,
+                  AustralianPosteParcel, SwissPostParcel,
+                  UpcaGs1DatabarCoupon<br /><br />
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner mt80" style="margin-top: 80px">
+          <h3 class="pro_title" style="text-align: left">
+            APROOVE Agent Server<br class="sp_br" />（プレビュー生成サーバー）
+          </h3>
+          <div class="system">
+            <div id="accordion" class="accordionbox">
+              <dl class="accordionlist">
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>対応OS</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  Microsoft Windows Server 2019<br />
+                  Microsoft Windows Server 2016
+                </dd>
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>CPU</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">Intel 2.4Ghz 4core x 2 CPU以上</dd>
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>メモリー</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">8GB以上推奨</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner mt80" style="margin-top: 80px">
+          <h3 class="pro_title" style="text-align: left">APROOVE Web Server</h3>
+          <div class="system">
+            <div id="accordion" class="accordionbox">
+              <dl class="accordionlist">
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>対応OS</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  Microsoft Windows Server 2019<br />
+                  Microsoft Windows Server 2016
+                </dd>
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>CPU</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  Intel v2.4Ghz以上 4core x 2 CPU以上
+                </dd>
+                <dt class="clearfix">
+                  <div class="title">
+                    <p>メモリー</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">8GB以上推奨</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="inner mt80" style="margin-top: 80px">
+          <h3 class="pro_title" style="text-align: left">
+            APROOVE 推奨クライアント環境
+          </h3>
+          <div class="system">
+            <div id="accordion" class="accordionbox">
+              <dl class="accordionlist">
+                <dt class="clearfix">
+                  <div class="title" style="text-align: left">
+                    <p>推奨クライアント環境</p>
+                  </div>
+                  <p class="accordion_icon"><span></span><span></span></p>
+                </dt>
+                <dd style="text-align: left">
+                  Microsoft Windows 10 64bit<br />
+                  Apple MacOS 最新OS<br />
+                  Microsoft Edge / Firefox / Safari / Chrome 最新バージョン
+                  <p class="mt30 small">
+                    ※ブラウザ開発会社の意向により推奨バージョンが変更される場合がございます。詳細に関しましては弊社へご連絡ください。
+                  </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 推奨環境　jquery -->
+
+      <section class="mod_contact contact mod_secOuter">
+        <div class="contact_outer">
+          <h3 class="mod_secTtl contact_ttl">Contact</h3>
+          <p class="contact_desc">
+            お問い合わせ・お見積り・ご相談依頼は下記よりお気軽にお申し付けください
+          </p>
+          <div class="mod_btn -contact contact_btn">
+            <a href="https://e.c-rings.net/?enq=Fcmyc86tMJI%3d">お問い合わせ</a>
+          </div>
+          <p class="contact_phone">03-6418-5111</p>
+          <p class="contact_time">受付時間：平日9:30~17:00</p>
+        </div>
+      </section>
+    </main>
+    <!-- contents-end -->
+     <!-- common_footer -->
+     <footer>
+      <nav class="fNav -top">
+        <dl class="fNav_outer -top">
+          <dt class="fNav_left -top">
+            <p class="mod_imgUnit -fLogo">
+              <img
+                src="./img/wm_logo-w.png"
+                alt="logo"
+              />
+            </p>
+            <p class="fNav_subTtl">Work Managemant for Content Production
+            </p>
+            <div class="fNav_btnArea">
+              <div class="fNav_btn mod_btn -contact">
+                <a href="https://www.online-proof.net/aproove/redirect.html"
+                  >お問い合わせ</a
+                >
+              </div>
+            </div>
+          </dt>
+          <dd class="fNav_right -top">
+            <ul class="fNav_list">
+              <li class="fNav_listItem">
+                <a href="./project.html">プロジェクト管理機能</a>
+              </li>
+              <li class="fNav_listItem">
+                <a href="./schedule.html">スケジュール管理機能</a>
+              </li>
+              <li class="fNav_listItem">
+                <a href="./communication.html">オンラインコミュニケーション機能</a>
+              </li>
+            </ul>
+            <ul class="fNav_list">
+              <li class="fNav_listItem">
+                <a href="./difference.html">コラム</a>
+              </li>
+              <li class="fNav_listItem">
+                <a href="./system.html">契約形態</a>
+              </li>
+
+            </ul>
+          </dd>
+        </dl>
+      </nav>
+      <nav class="fNav -bottom">
+        <ul class="fNav_list -gnav">
+          <li class="fNav_listItem">
+            <p class="mod_imgUnit fNav_logo">
+              <a href="https://www.vpj.co.jp/"
+                ><img
+                  src="https://www.cierto-ccc.com/cierto/img/22-logo_vpj_white.png"
+                  alt="vpj_logo"
+              /></a>
+            </p>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.vpj.co.jp/company/index.html">Company</a>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.vpj.co.jp/concept/index.html">Concept</a>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.vpj.co.jp/product/index.html">Product</a>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.vpj.co.jp/case/index.html">Case</a>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.vpj.co.jp/news/index.html">News</a>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.vpj.co.jp/contact/index.html">Contact</a>
+          </li>
+          <li class="fNav_listItem">
+            <a href="https://www.cierto-ccc.com/cierto/index_eng.html">EN</a>
+          </li>
+        </ul>
+        <small class="fNav_cr">
+          <span id="jsCopyright"></span> Visual Processing Japan. All Rights
+          Reserved
+        </small>
+      </nav>
+    </footer>
+    <!-- common_footer -->
+    <!-- common_spheader -->
+    <div class="mod_spHeader">
+      <p class="mod_imgUnit -spLogo">
+        <a href="/index.html"
+          ><img src="./img/wm_logo-b.png" alt="cierto_logo"
+        /></a>
+      </p>
+      <div class="mod_hamBtn" id="jsHambtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- common_spheader -->
+    <!-- common_spnav -->
+    <div class="spNav" id="spNav">
+      <nav class="spNav_outer">
+        <div class="spNav_wrapper">
+          <ul class="spNav_list">
+            <li class="spNav_listItem">Function & Features</li>
+            <li class="spNav_listItem">
+              <ul>
+                <li>
+                  <a href="./project.html">プロジェクト管理機能</a>
+                </li>
+                <li>
+                  <a href="./schedule.html">スケジュール管理機能</a>
+                </li>
+                <li>
+                  <a href="./communication.html"
+                    >オンラインコミュニケーション機能</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="spNav_listItem">
+              <a href="./difference.html">コラム</a>
+            </li>
+            <li class="spNav_listItem">
+              <a href="./system.html">契約形態</a>
+            </li>
+            <li class="spNav_listItem">
+              <a href="https://www.vpj.co.jp/case/index.html">導入事例</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="spNav_list -gnav">
+          <li class="spNav_listItem">
+            <a href="https://www.vpj.co.jp/company/index.html">Company</a>
+          </li>
+          <li class="spNav_listItem">
+            <a href="https://www.vpj.co.jp/concept/index.html">Concept</a>
+          </li>
+          <li class="spNav_listItem">
+            <a href="https://www.vpj.co.jp/concept/index.html">Product</a>
+          </li>
+          <li class="spNav_listItem">
+            <a href="https://www.vpj.co.jp/concept/index.html">Case</a>
+          </li>
+          <li class="spNav_listItem">
+            <a href="https://www.vpj.co.jp/concept/index.html">News</a>
+          </li>
+          <li class="spNav_listItem">
+            <a href="https://www.vpj.co.jp/contact/index.html">Contact</a>
+          </li>
+          <li class="spNav_listItem">
+            <a href="https://www.cierto-ccc.com/cierto/index_eng.html">EN</a>
+          </li>
+        </ul>
+      </nav>
+      <small class="spNav_cr"
+        >Copyright <span id="crYear"></span> Visual Processing Japan. All Rights
+        Reserved.</small
+      >
+    </div>
+    <!-- common_sonav -->
+  </body>
+</html>
+
