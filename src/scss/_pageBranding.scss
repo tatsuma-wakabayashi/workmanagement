@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.brandingPage {
+
+  padding-bottom: 12rem;
+  @include mq(xl){
+    padding-bottom: 6rem;
+  }
+  .mod_pageList {
+    margin-bottom: 6rem;
+  }
+  .brandingPage_listItem {
+    margin-bottom: 6rem;
+    @include mq(m){
+      margin-bottom: 0;
+    }
+
+    .brandingPage_contentsOuter {
+      @include mq(m) {
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+    }
+    &:first-child {
+      margin-bottom:  6rem;
+    }
+  }
+
+  .mod_pageList.-c2 {
+    @include mq(l){
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+    
+  }
+}
+
+// .brandingPage .brandingPage_listItem {
+  
+//   // @include mq(xl){
+//   //   margin-bottom:0;
+//   // }
+
+// }
+
+.brandingPage_contentsOuter.-middle {
+  flex-direction: column;
+  .brandingPage_contentsRight{
+    max-width:  29rem;
+    margin: 0 auto;
+  }
+}
+
+.brandingPage_contentsRight {
+  flex: 1;
+  max-width: 53rem;
+}
+
+// .branding_mainTtl::before {
+//   @include kasouTtl_before(Feature)
+// }
+
+

@@ -1,0 +1,58 @@
+
+body {
+  margin: 0;
+}
+
+div {
+  margin:0;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:visited{
+  color: inherit
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+
+dl {
+  list-style-type: none;
+  margin: 0;
+}
+
+dt{
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin:0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+figure{
+  margin: 0;
+}

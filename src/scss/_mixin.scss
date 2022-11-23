@@ -1,0 +1,59 @@
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin ttl_after($str) {
+  content: "#{$str}";
+  font-size: 1.5rem;
+  display: inline-block;
+  color: $red-color;
+  width: 15rem;
+  height: 1rem;
+  position: absolute;
+  top: -3rem;
+  left: 2.8rem;
+  transform: translateY(-10%);
+}
+
+@mixin kasouTtl_before($str) {
+  content: "#{$str}";
+  font-weight: 300;
+  display: block;
+  background-color: $red-color;
+  color: $secTtl-color-w;
+  font-size: 1.4rem;
+  letter-spacing: 1.3px;
+  padding: 0.8rem 3.2rem;
+  position: absolute;
+  top: -5rem;
+  transform: translateY(-50%);
+}
+
+@mixin feature_after($str) {
+  display: block;
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background-image: url(https://www.online-proof.net/aproove/img/icon_#{$str}.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  position: absolute;
+  top: -8.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin btn {
+  width: 150px;
+  margin: 0 auto;
+  padding: 20px 5px;
+  border: solid 3px #0071bc;
+  border-radius: 10px;
+  text-align: center;
+  color: #0071bc;
+}
+
+//responsible

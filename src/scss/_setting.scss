@@ -1,3 +1,52 @@
-@charset "utf-8";
+@charset "UTF-8";
 
+//color
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Noto Sans JP', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+// main {
+//   padding-bottom: 12rem;
+//   @include mq(xl) {
+//     padding-bottom: 8rem;
+//   }
+// }
+//common用変数
+$main-color: #313131;
+$gray-color: #464646;
+$white-color: #ededed;
+$black-color: #242424;
+
+//contents用　変数
+
+$secTtl-color: #2F62AB;
+$secText-color: #444444;
+$green-color: #8EC251;
+$blue-color: #2F62AB;
+$secTtl-color-w: #fafafa;
+$ttlBordercolor: #c4c4c4;
+$subTTlcolor: #707070;
+$footerColor: #163953;
+$red-color: red;
+
+p {
+  color: $secText-color;
+}
+
+table {
+  word-break: break-all
+}
+dt,dd {
+  word-break: break-all
+}

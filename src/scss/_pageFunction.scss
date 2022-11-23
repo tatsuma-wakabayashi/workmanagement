@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.functionPage {
+  padding-bottom: 20rem;
+  @include mq(xl) {
+    padding-bottom: 8rem;
+  }
+  .mod_pageList.-c2 {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 6rem;
+    // @include mq(xl){
+    //   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    // }
+    @include mq(x){
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+  }
+}
+.functionPage_contentsTop {
+  width: min(100%, 102rem);
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  @include mq(l) {
+    flex-direction: column;
+  }
+
+}
+
+.functionPage_contentsBottom {
+  width: min(100%, 102rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.functionPage_contentsDesc {
+  margin-bottom: 3.2rem;
+}
+
+.functionPage_contentsBox {
+  padding: 1.6rem;
+  background-color: #fff;
+  box-shadow: 0 1 2 rgba(0, 0, 0, 0.9);
+  margin-bottom: 3rem;
+  .functionPage_formatTtl {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $secTtl-color;
+    margin-bottom: 0.8rem;
+  }
+  .functionPage_formatText {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
+
+.functionPage_contentsLeft {
+  width: 50%;
+  @include mq(xl) {
+    width: 100%;
+  }
+  // .functionPage_contentsTtl::after{
+  //   @include ttl_after(Function);
+  // }
+  .mod_btn.-small {
+    justify-content: flex-end;
+    margin-left: auto;
+    @include mq(xl) {
+      flex-direction: column-reverse;
+    }
+    a {
+      display: block;
+      width: 100%;
+      font-size: 1.6rem;
+      padding-right: 0;
+    }
+  }
+}
+
+.functionPage_contentsRight {
+  width: 50%;
+  @include mq(l) {
+    width: 100%;
+  }
+}
+
+
+// .function_mainTtl::before {
+//   @include kasouTtl_before(Function)
+// }

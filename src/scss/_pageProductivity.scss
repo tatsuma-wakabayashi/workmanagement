@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.productivityPage {
+  padding-bottom: 12rem;
+  @include mq(xl) {
+    padding-bottom: 8rem;
+  }
+  .mod_pageList.-c2 {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    @include mq(xl) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+  }
+}
+
+.productivityPage_desc{
+  flex:1;
+  
+}
+
+.productivityPage_contentsRight {
+  flex: 1;
+  max-width: 29rem;
+}
+
+
+// .productivity_mainTtl::before {
+//   @include kasouTtl_before(Feature)
+// }

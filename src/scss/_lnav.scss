@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+.lNav,
+.s-lNav {
+  width: 100%;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  background-color: #f8f8f8;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  @include mq(l) {
+    top: 0;
+    display: none;
+  }
+  .lNav_outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .lNav_logo {
+      max-width: 20rem;
+      margin-left: 4rem;
+      @include mq(xl) {
+        padding: 1.8rem 0;
+      }
+      @include mq(outer){
+        width: 12rem;
+        margin-left: 1rem;
+      }
+    }
+    .lNav_list {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto;
+      align-items: center;
+
+      @include mq(l) {
+        display: none;
+      }
+      .lNav_listItem {
+        padding: 1rem 1.8rem;
+        position: relative;
+        font-weight: 400;
+        text-align: center;
+        color: $secText-color;
+        margin-right: 3rem;
+        cursor: pointer;
+        @include mq(xxl) {
+          padding: 0.5rem 0.8vw;
+        }
+        &:first-child {
+          position: relative;
+          padding: 1.3rem 1.8rem;
+          &::after {
+            content: "";
+            display: block;
+            width: 0.6rem;
+            height: 0.6rem;
+            background-color: transparent;
+            border-top: 1px solid $secText-color;
+            border-right: 1px solid $secText-color;
+            transform: rotate(135deg) translateX(0%) translateY(30%);
+            position: absolute;
+            top: 50%;
+            right: -10px;
+             transition: all 0.3s 0s ease;
+          }
+        }
+        &:nth-child(5) {
+          margin-left: 4rem;
+          padding: 3rem 4rem;
+          background-color: #d0d0d0;
+          margin: 0;
+          @include mq(xxl) {
+            padding: 3rem 3rem;
+          }
+        }
+        &:last-child {
+          background-color: $blue-color;
+          color: #fafafa;
+          padding: 3rem 3rem;
+          //transition: all 0.3s 0s ease;
+          margin: 0;
+          @include mq(xxl) {
+            padding: 3rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.lNav .lNav_outer .lNav_list .openNav:first-child::after {
+  transform: rotate(-45deg) translateX(0%) translateY(30%);
+  transition: all 0.3s 0s ease;
+}
+
+.lNav.active,
+.s-lNav.active {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  .lNav_outer .lNav_list {
+    .lNav_contactBtn,
+    .lNav_dlBtn,
+    .lNav_contactBtn {
+      // padding: 2.2rem 3rem;
+      transition: all 0.3s 0s ease;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@charset "utf-8";
+.fNav.-top {
+  background-color: #163953;
+  padding: 120px 0px 30px;
+
+  .fNav_outer.-top {
+    @include mq(xl) {
+      display: none;
+    }
+    width: min(80%, 1140px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d3d3d3;
+    align-items: flex-start;
+    .fNav_left.-top {
+      color: #fafafa;
+      .mod_imgUnit.-fLogo {
+        max-width: 38rem;
+        margin-bottom: 2rem;
+      }
+      .fNav_subTtl {
+        font-size: 1.4rem;
+        margin-bottom: 3.6rem;
+        color: #fafafa;
+        letter-spacing: 1.5px;
+      }
+
+      .fNav_btnArea {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        .fNav_btn {
+          a {
+            background-color: $blue-color;
+            color: #fafafa
+            
+          }
+          
+        }
+      }
+    }
+    .fNav_right {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10rem;
+      .fNav_list {
+        .fNav_listItem {
+            color: #fafafa;
+            font-size: 1.6rem;
+            margin-bottom: 5rem;
+            small {
+              display: block;
+              font-size: 70%;
+              color: #bfbfbf;
+              padding-top: 1rem;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+      }
+    }
+  }
+}
+
+.fNav.-bottom {
+  background-color: #163953;
+  padding-bottom: 8rem;
+
+  .fNav_list.-gnav {
+    @include mq(xl) {
+      display: none;
+    }
+    width: min(80%, 1140px);
+    margin: 0 auto;
+    color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 120px;
+    padding-top: 30px;
+    .fNav_listItem {
+      .fNav_logo {
+        width: 200px;
+      }
+    }
+  }
+
+  .fNav_cr {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fafafa;
+    display: block;
+  }
+}

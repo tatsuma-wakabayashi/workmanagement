@@ -1,0 +1,12 @@
+@charset "uff-8";
+
+$breakpoints: (
+    "xxl": "screen and (max-width: 1350px)",
+    "xl": "screen and (max-width: 1140px)",
+    "outer": "screen and (max-width: 1020px)",
+    "l": "screen and (max-width: 888px)",
+    "m": "screen and (max-width: 790px)",
+    "plus": "screen and (max-width: 528px)",
+    "x": "screen and (max-width: 375px)",
+    "se": "screen and (max-width: 320px)",
+);

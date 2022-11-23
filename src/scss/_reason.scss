@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.reason {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding-top: 12rem;
+  @include mq(l){
+    padding-top: 6rem;
+  }
+  .reason_outer {
+    .reason_ttl {
+      text-align: center;
+      color: $secTtl-color;
+      margin-bottom: 8rem;
+    }
+    .reason_wrapper {
+      .reason_outer {
+        width: min(90%, 114rem);
+        margin: 0 auto;
+        background-color: #efefef;
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+        padding: 5.6rem 5rem;
+        position: relative;
+        @include mq(outer) {
+          display: block;
+          
+
+        }
+        @include mq(l){
+          width: 100%;
+          padding: 4rem 2.4rem;
+        }
+      
+        .reason_left {
+          flex: 3.5;
+
+          .reason_ttl {
+            font-size: clamp(2.3rem, 0.849rem + 2.32vw, 2.3rem);
+            margin-bottom: 2.8rem;
+            color: $secTtl-color;
+            text-align: left;
+            @include mq(outer) {
+              text-align: center;
+            }
+            @include mq(l) {
+              text-align: left;
+            }
+          }
+          .reason_desc {
+            font-size: clamp(1.6rem, 0.582rem + 1.46vw, 1.625rem);
+            line-height: 1.5;
+            @include mq(outer) {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+        .reason_right {
+          flex: 1;
+          .reason_iconList {
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+            @include mq(plus) {
+              display: none;
+            }
+
+            .reason_iconlistItem {
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+              padding: 2rem 0.6rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0.8rem;
+              background-color: #fafafa;
+              width: 9rem;
+              .mod_imgUnit {
+                width: 50%;
+              }
+            }
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 4.6rem;
+          height: 4.6rem;
+          background-color: #efefef;
+          position: absolute;
+          bottom: -2.6rem;
+          left: 50%;
+          transform: translateX(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}

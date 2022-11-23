@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.mainLine {
+  padding: 3.2rem 0;
+  background-color: $secTtl-color;
+  background-image: url(https://www.cierto-ccc.com/cierto/test2208/img/cierto_logotype-l.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-bottom: 4px solid $red-color;
+  position: relative;
+  .mainLine_outer {
+    width: min(80%, 88.8rem);
+    margin: 0 auto;
+    .mainLine_text {
+      color: $secTtl-color-w;
+      font-size: clamp(1.125rem, 0.784rem + 1.71vw, 1.7rem);
+      line-height: 1.8;
+      font-weight: 400;
+    }
+  }
+  @include mq(m){
+    position: relative;
+  }
+}
+
+
+.mainLine_logoOuter {
+  display: none;
+  .kv_logoInner {
+    &:last-child {
+      padding-top: 0.8rem;
+    }
+  }
+  @include mq(m){
+    display: flex;
+  gap: 2rem;
+    position: absolute;
+    top: -132px;
+    left: 8vw;
+  }
+}

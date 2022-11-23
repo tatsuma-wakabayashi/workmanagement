@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.differencePage {
+  padding-top: 8rem;
+  width: min(90%, 114rem);
+  margin: 0 auto;
+  .differencePage_outer {
+    width: min(100%, 114rem);
+    .differencePage_list {
+      margin-bottom: 10rem;
+    
+      .differencePage_listItem {
+        background-color: #fff;
+        padding: 0;
+        @include mq(l){
+          margin-bottom: 8rem;;
+        }
+      
+        .differencePage_contentsLeft {
+          margin-bottom: 0rem;
+          @include mq(l) {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .differencePage_contentsOuter.-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        gap: 6rem;
+        dt,dd {
+          flex: 1
+        }
+        @include mq(l){
+          flex-direction: column;
+        }
+      }
+      
+      .differencePage_contentsOuter.-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+        @include mq(l){
+          flex-direction: column;
+        }
+
+        dt,dd {
+          flex: 1
+        }
+
+        @include mq(l) {
+          gap: 6rem;
+        }
+      }
+    }
+  }
+}
+// .differencePage_contentsTtl::after{
+//   @include ttl_after(Point);
+// }
+
+.differencePage_table {
+  width: min(100%, 114rem);
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 16px;
+  margin-bottom: 20rem;
+
+  th {
+    width: 50%;
+    text-align: left;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    border-bottom: solid 2px #E0E0E0;
+    padding: 1.2rem 3rem;
+    font-weight: 300;
+    @include mq(outer){
+      font-size: 80%;
+      padding: 1.2rem 1.2rem
+    }
+
+  }
+
+  td {
+    width: 25%;
+    border-bottom: solid 2px #E0E0E0;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #707070;
+    
+  }
+}
+
+.differencePage_table .tableHead {
+  @include mq(outer) {
+    font-size: 80%;
+  }
+}
+
+.differencePage_tabelHead {
+  th,
+  td {
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    padding: 1.6rem 0;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: solid 2px #E0E0E0;
+  }
+}
+
+.differencePage_contentsTtl {
+  margin-bottom: 6rem;
+}
+
+// .difference_mainTtl::before {
+//   @include kasouTtl_before(Column)
+// }

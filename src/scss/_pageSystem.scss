@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+#system {
+  padding-bottom: 0;
+}
+.pageS_pattern {
+  padding-top: 0;
+}
+.pageSHead {
+  background-image: none;
+  padding-top: 17rem;
+  margin-bottom: 12rem;
+  .mod_pageHeadOuter {
+    align-items: center;
+    .mod_pageHeadTtl {
+      text-align: center;
+      @include mq(l){
+        text-align: left;
+      }
+    }
+  }
+
+  .mod_pageHeadOuter .mod_pageHeadTtl::before {
+    display: none;
+  }
+}
+
+
+.pageS_pattern {
+  padding-bottom: 0px;
+  margin-bottom: 8rem;
+  
+  .pageS_patternTtl {
+    margin-bottom: 3.2rem;
+  }
+  .pageS_patternDesc {
+    font-size: clamp(1.6rem, 1rem + 1.5vw, 1.625rem);
+    line-height: 1.5;
+  }
+  .pageS_patternOuter {
+    display: block;
+    .pageS_patternLeft{
+      margin-bottom: 6rem;
+      
+
+    }
+
+   
+  }
+}
+
+
+
+.pageS_consal {
+  padding-top: 8rem;
+  background-color: #f1f1f1;
+  width: 100%;
+  .pageS_consalOuter {
+    width: min(90%, 114rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 9rem;
+    @include mq(l) {
+      flex-direction: column;
+      
+    }
+    .pageS_patternRight,
+    .pageS_patternLeft {
+      flex: 1;
+    }
+
+    .pageS_patternRight {
+      .pageS_partternTtl {
+        margin-bottom: 4rem;
+      }
+    }
+    .pageS_patternLeft {
+      flex: 1;
+      .pageS_partternTtl {
+        margin-bottom: 4rem;
+      }
+
+    }
+   
+    .pageSConsal_top {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+      @include mq(xl) {
+        flex-direction: column;
+        gap: 4rem;
+      }
+      .pageSConsal_left {
+        flex: 1;
+        &::before {
+          height: 25%;
+          @include mq(xl) {
+            height: 100%;
+          }
+        }
+      }
+      .pageSConsal_right {
+        font-size: clamp(1.6rem, 1rem + 1.5vw, 1.625rem);
+        line-height: 1.5;
+        flex: 1;
+      }
+    }
+  }
+  .pageSConsal_bottm {
+    @include mq(m) {
+      width: 100%;
+      height: min(100vw, 37rem);
+      background-image: url(../../dist/img/system-img02.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      .mod_imgUnit {
+        display: none;
+      }
+    }
+  }
+  .pageS_patternTtl {
+    margin-bottom: 3.2rem;
+  }
+  .pageS_patternDesc {
+    font-size: clamp(1.6rem, 1rem + 1.5vw, 1.625rem);
+    line-height: 1.5;
+  }
+}
+
+.pageS_control {
+  background-color: #243444;;
+  width: 100%;
+  padding-top: 8rem;
+  .pageS_controlTtl {
+    color: $secTtl-color-w;
+    text-align: center;
+    font-size: clamp(1.6rem, 0.724rem + 2.32vw, 2.375rem);
+    margin-bottom: 6rem;
+  }
+  .pageS_controlList {
+    width: min(90%, 114rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 8rem;
+    @include mq(l){
+      gap:3rem;
+    }
+
+
+    .pageS_controlLIstItem {
+      padding: 5.6rem 3.2rem;
+      background-color: $footerColor;
+      .pageS_controlTtl {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $secTtl-color-w;
+        margin-bottom: 3.2rem;
+      }
+      .pageS_controlDesc {
+        font-size: clamp(1.4rem, 1rem + 1.3vw, 1.5rem);
+        line-height: 1.5;
+        color: #fafafa;
+      }
+    }
+  }
+}
+
+.pageS_format {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 8rem 0;
+  .pageS_formatContainer {
+    width: min(90%, 114rem);
+    margin: 0 auto 4rem;
+    .pageS_formatContentsTtl {
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.6rem;
+      color: $secTtl-color;
+    }
+
+    .pageS_formatInner {
+      background-color: #f1efe9;
+      padding: 3% 3%;
+      .pageS_formatWrapper {
+        font-size: 1.4rem;
+        width: 100%;
+        margin-bottom: 2.4rem;
+        //margin-bottom: 2rem;
+        dt {
+          margin-bottom: 1.2rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .inner.mt80 .system #accordion .accordionlist dt .title {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .inner.mt80 .system #accordion .accordionlist dt .accordion_icon span:nth-of-type(1){
+    top: 50%;
+  } 
+  .inner.mt80 .system #accordion .accordionlist dt .accordion_icon span:nth-of-type(2){
+    top: 50%;
+  } 
+
+  
+}
+
+//pageS ttl
+
+.pageS_patternOuter .mod_secTtl {
+  position: relative;
+  vertical-align: middle;
+}
+
+
+
+
+// 推奨フォーマット欄
+.pageS_format{
+  width: 100%;
+  background-color: transparent;
+  .inner {
+    width: min(90%, 114rem);
+    margin: 0 auto;
+    font-size: 1.8rem;
+    .system {
+      background-color: transparent;
+      .accordionbox {
+        padding: 0;
+      }
+    }
+  }
+  
+}
+
+.pageS_patternTtl {
+  margin-bottom: 3.2rem;
+}
