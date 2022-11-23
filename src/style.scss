@@ -1,1 +1,29 @@
-@use "./scss/setting.scss"
+@charset "utf-8";
+@import "scss/_mixin.scss";
+@import "scss/_normalize.scss";
+@import "scss/_reset.scss";
+@import "scss/_responsible.scss";
+@import "scss/_setting.scss";
+@import "scss/_mod.scss";
+@import "scss/_gnav.scss";
+@import "scss/_lnav.scss";
+@import "scss/_spNav.scss";
+@import "scss/_footer.scss";
+@import "scss/_kv.scss";
+@import "scss/_merit.scss";
+@import "scss/_wf.scss";
+@import "scss/_feature.scss";
+@import "scss/_concept.scss";
+@import "scss/_reason.scss";
+@import "scss/_system.scss";
+@import "scss/_contact.scss";
+@import "scss/_pageC.scss";
+@import "scss/_pageP.scss";
+@import "scss/_pageS.scss";
+// @import "scss/_pageBranding.scss";
+@import "scss/_pageDifference.scss";
+// @import "scss/_pageFunction.scss";
+// @import "scss/_pageProductivity.scss";
+@import "scss/_pageSystem.scss";
+@import "scss/_subNav.scss"
+
